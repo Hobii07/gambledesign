@@ -1,0 +1,151 @@
+.cards {
+  padding: 4rem;
+  background: #fff;
+}
+
+h1 {
+  font-family: fantasy, sans-serif;
+  color: darkred;
+  text-align: center;
+}
+
+.cards__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards__wrapper {
+  position: relative;
+  margin: 50px 0 45px;
+}
+
+.cards__items {
+  margin-bottom: 24px;
+}
+
+.cards__item {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+  border-radius: 10px;
+}
+
+.card-container-ace:hover {
+  transform: scale(1.06);
+  transition: all 0.3s ease-out;
+}
+
+.card-container-ace {
+  display: flex;
+  flex-flow: column;
+  width: 140px;
+  height: 200px;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  margin: 1px 20px;
+}
+
+.card-container-info span {
+  font-size: 20px;
+  position: absolute;
+  left: 5px;
+  color: black;
+}
+
+.card-container-info span:nth-of-type(2) {
+  font-size: 20px;
+  position: absolute;
+  left: 120px;
+  top: 175px;
+  transform: rotate(180deg);
+  color: black;
+}
+
+.heart-diamond-one {
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  left: 2px;
+  top: 20px;
+}
+
+.heart-diamond-two {
+  color: red;
+  font-size: 50px;
+  position: absolute;
+  left: 45px;
+  top: 70px;
+}
+
+.heart-diamond-three {
+  font-size: 20px;
+  position: absolute;
+  left: 117px;
+  top: 155px;
+  transform: rotate(180deg);
+  color: red;
+}
+
+.spade-club-one {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  left: 2px;
+  top: 20px;
+}
+
+.spade-club-two {
+  color: black;
+  font-size: 50px;
+  position: absolute;
+  left: 45px;
+  top: 70px;
+}
+
+.spade-club-three {
+  font-size: 20px;
+  position: absolute;
+  left: 117px;
+  top: 155px;
+  transform: rotate(180deg);
+  color: black;
+}
+
+.cards__item__info {
+  padding: 20px 30px 30px;
+}
+
+.cards__item__text {
+  color: #252e48;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .cards__item {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards__item {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2em 2em;
+  }
+}
